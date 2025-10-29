@@ -1,11 +1,15 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import Header from "./_components/Header";
+import Hero from "./_components/Hero";
 
 export default function Home() {
   return (
-    <div className="">
-      <h2>ai video generetor</h2>
-      <Button>generate</Button>
+    <div className="md:px-16 lg:px-24 xl:px-36">
+      {/* header */}
+      <Header/>
+      {/* hero */}
+      <Hero/>
     </div>
   );
 }
