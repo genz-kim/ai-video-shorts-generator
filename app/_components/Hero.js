@@ -1,5 +1,6 @@
 import { Button } from '@/components/ui/button'
 import React from 'react'
+import Authentication from './Authentication'
 
 function Hero() {
   return (
@@ -9,7 +10,10 @@ function Hero() {
       </p>
       <div className='mt-7 flex gap-8'>
       <Button size="lg" variant="outline">Explore</Button>
-        <Button size="lg">Get Started</Button>
+      <Authentication>
+      <Button size="lg" className="cursor-pointer">Get Started</Button>
+      </Authentication>
+        
       </div>
     </div>
   )
